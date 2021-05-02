@@ -1,4 +1,5 @@
 ## This is a project to make an API in php useing docker. 
+the project contains a nginx server, mariadb, running php 7.4 and lots of bugs.
 
 ## To Start
 clone repo and run
