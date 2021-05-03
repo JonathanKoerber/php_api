@@ -28,6 +28,7 @@ class Product{
                 p.created DESC";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
+        echo "called product/read";
         return $stmt;
     }
     function create(): bool
