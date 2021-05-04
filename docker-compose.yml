@@ -15,6 +15,9 @@ services:
       - ./api:/app
   mysql:
     image: mariadb:latest
+
+    volumes:
+      -./init.sql:data/init.sql
     environment:
       MYSQL_ROOT_PASSWORD: 'secret'
       MYSQL_USER: 'tutorial'
